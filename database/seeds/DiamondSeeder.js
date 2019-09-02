@@ -18,7 +18,7 @@ const Diamond = use('App/Models/Diamond')
 class DiamondSeeder {
   async run () {
     const diamonds = await Database.table('diamonds')
-    for (let i = 0; i < 300; i++) {
+    for (let i = 0; i < 500; i++) {
       const randomize = (arr) => {return arr[Math.floor(Math.random()*arr.length)];};
       let caratWeight = randomize([0.5,0.6,0.7,0.8,0.9,1.0,1.1,1.2,1.3,1.4,1.5]);
       let cut = randomize(['Round', 'Princess', 'Cushion', 'Marquise', 'Emerald']);
@@ -37,7 +37,7 @@ class DiamondSeeder {
       let clarityPrice = {
         'FL':1200, 'IF':1100, 'VVS1':100, 'VVS2':900, 'VS1':800, 'VS2':700, 'SI1':600, 'SI2':500, 'I1':400, 'I2':300, 'I3':200,
       };
-      let soldFor = sum + caratWeightPrice[caratWeight] + cutPrice[cut] + colorPrice[color] + clarityPrice[clarity];
+      let soldFor = (Math.random()*385) + sum + caratWeightPrice[caratWeight] + cutPrice[cut] + colorPrice[color] + clarityPrice[clarity];
       const diamond = new Diamond();
       diamond.caratWeight = caratWeight;
       diamond.cut = cut;
@@ -47,7 +47,6 @@ class DiamondSeeder {
 
       await diamond.save();
     }
-    console.log(diamonds);
   }
 }
 

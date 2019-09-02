@@ -5,41 +5,56 @@
 </head>
 <body>
 <h3> Am I Worthy enough for Worthy Challenge <h3>
-<form action="/index">
+<form method="GET" action="/index">
 
-<label for="name">Carat</label> &nbsp; <input name="carat" type="text" value="0.5" /> <br /> <label for="name">Cut</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select>
-<option selected="selected" value="1">Round</option>
-<option value="2">Princess</option>
-<option value="3">Cushion</option>
-<option value="4">Marquise</option>
-<option value="5">Emerald</option>
-</select><br /> <label for="name">Color</label> &nbsp;&nbsp;<select>
-<option selected="selected" value="1">D</option>
-<option value="2">E</option>
-<option value="3">F</option>
-<option value="4">G</option>
-<option value="5">H</option>
-<option value="6">I</option>
-<option value="7">J</option>
-<option value="8">K</option>
-<option value="9">L</option>
-<option value="10">M-Z</option>
-<option value="11">Fancy</option>
-</select><br /> <label for="name">Clarity</label> &nbsp;<select>
-<option selected="selected" value="1">FL</option>
-<option value="2">IF</option>
-  <option value="3">VVS1</option>
-  <option value="4">VVS2</option>
-  <option value="5">VS1</option>
-  <option value="6">VS2</option>
-  <option value="7">SI1</option>
-  <option value="8">SI2</option>
-  <option value="9">I1</option>
-  <option value="10">I2</option>
-  <option value="11">I3</option>
+
+
+<label for="name">Carat</label> &nbsp; <input name="carat" type="text" value="0.5" /> <br /> 
+
+<label for="name">Cut</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="cut">
+<option selected="selected" value="Round">Round</option>
+<option value="Princess">Princess</option>
+<option value="Cushion">Cushion</option>
+<option value="Marquise">Marquise</option>
+<option value="Emerald">Emerald</option>
+</select><br /> 
+
+<label for="name">Color</label> &nbsp;&nbsp;
+<select name="color">
+<option selected="selected" value="D">D</option>
+<option value="E">E</option>
+<option value="F">F</option>
+<option value="G">G</option>
+<option value="H">H</option>
+<option value="I">I</option>
+<option value="J">J</option>
+<option value="K">K</option>
+<option value="L">L</option>
+<option value="MTZ">M-Z</option>
+<option value="Fancy">Fancy</option>
+</select><br /> 
+
+<label for="name">Clarity</label> &nbsp;
+<select name="clarity">
+<option selected="selected" value="FL">FL</option>
+<option value="IF">IF</option>
+  <option value="VVS1">VVS1</option>
+  <option value="VVS2">VVS2</option>
+  <option value="VS1">VS1</option>
+  <option value="VS2">VS2</option>
+  <option value="SI1">SI1</option>
+  <option value="SI2">SI2</option>
+  <option value="I1">I1</option>
+  <option value="I2">I2</option>
+  <option value="I3">I3</option>
 </select>
 <br/>
-<button type="submit" value="Submit">Calculate Price</button>
+
+
+<button value="Submit" type="submit"">Calculate Price</button>
+
+
 </form>  
 </body>
 </html>
