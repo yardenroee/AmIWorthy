@@ -15,5 +15,5 @@
 
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
-Route.get('/', 'DiamondController.index');
-// Route.on('/').render('diamond-calc')
+Route.on('/index','DiamondController.index');
+Route.on('/').render('diamond-calc');
