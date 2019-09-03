@@ -61,3 +61,8 @@ adonis migration:run
 
 Run ``` adonis seed ``` to seed the database and get a good feel of the calculator.
 
+### Calculator
+
+Run ```adonis serve``` to make your machine the host for the calculator.
+Go to ```localhost:3333```
+`ENJOY`
