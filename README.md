@@ -1,26 +1,28 @@
 # AmIWorthy Diamond Price Calculator
 
-###Right Off the Bat
+### Right Off the Bat
 
-Right off the bat, I'd like to say that as a Junior Developer, I have never used the Adonis framework, or any NodeJS framework for that matter. In a matter of a day, I was able to learn my way around this MVC, and familiarize myself with new syntax that helped me build this very basic yet highly reactive feature. Although it is similar to other frameworks I have experience with, I felt that it still was a huge learning experience for me, and whether I get invited for an onsite or not, I wanted to say thanks for giving me the opportunity to learn something new!
+Right off the bat, I'd like to say that as a Junior Developer, I have never used the Adonis framework, or any NodeJS framework for that matter. In a matter of a day, I was able to learn my way around this MVC, and familiarize myself with new syntax that helped me build this feature.
 
-###Description
+ Although it is similar to other frameworks I have experience with, I felt that it still was a huge learning experience for me, and whether I get invited for an onsite or not, I wanted to say thanks for giving me the opportunity to learn something new!
 
-This is the coding challenge that I was asked to be written by the Worthy Dev team.
+### Description
+
+This is the coding challenge presented to me by the Worthy Dev team.
 This calculator has to be installed and run locally to work as it is not hosted on any platform.
 
 The calculator gives the average quote of the selling price for a certain diamond given its cut, 
 carat weight, color, shape, and clarity. 
 
-###Assumptions
+### Assumptions
 
 As I have no clue how diamonds are priced in today's market, I looked up other price calculators for diamonds
-that are supposed to perform similarly. I was able to derive some pricing variations given the calculator, and I came up with a system of differentials that distinguish between the tiers. Those can be seen in the ```databse/seeds/DiamondSeeder.js``` file. 
+that are supposed to perform similarly. I was able to derive some pricing variations given the calculator, and I came up with a system of differentials that distinguish between the tiers. Those can be seen in the ``databse/seeds/DiamondSeeder.js`` file. 
 
 This is the calculator that I used to get some pricing info to make it a bit more realistic:
 [Washington Diamon Calculator](https://www.washingtondiamond.com/pages/diamond-price-calculator)
 
-###Higher Order of Explanation
+### Higher Order of Explanation
 
 Since I have no experience with Adonis, I battled with each of these phases throughly, but nonetheless came out victorious after all.
 
