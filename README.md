@@ -40,7 +40,7 @@ After I relished in my outstanding victory at the Battle of Routes, I delved dee
 
 Finally, still in my controller, I created a small but powerful `avg(arr)` method that accepts an array of Diamond instances and averages the selling price out. That function takes care of edge cases like having `if (caratWeight < 0.5 || caratWeight > 1.5)` as well as the good ol' `if(arr.length === 0)` both cases would return a string saying that we just dont mess with those kind of sales and that we are better off that way anyhow :).
 
-And that's about it. This was fun to write, and looking at it now I feel so nerdy knowing all of these terms,<span style="color:red">AND I'M LOVING IT! </span>
+And that's about it. This was fun to write, and looking at it now I feel so nerdy knowing all of these terms, `AND I'M LOVING IT!`
 
 I hope this works for you because I really believe in this product and would love to work on it!
 
