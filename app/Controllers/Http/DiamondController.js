@@ -7,7 +7,7 @@ class DiamondController {
         const params = request.only(['carat','cut','color','clarity','soldFor']);
         let carat = Number.parseFloat(params.carat).toFixed(1);
         if(carat < 0.5 || carat > 1.5){
-            return "Sorry, our records don't show any past transactions of this sort"
+            return "Please select a value between 0.5 and 1.5"
         }
         let result = ( await Database
         .table('diamonds')
