@@ -24,7 +24,6 @@ class DiamondController {
                 sum += obj.soldFor
             }
             if(sum/arr.length === NaN) {
-                console.log("error")
                 return "Sorry, our records don't show any past transactions of this sort"
             } else {
                 return `$${Number(sum/arr.length).toFixed(2)}`;
@@ -32,11 +31,6 @@ class DiamondController {
         }
         return avg(result);
     }
-
-    async price({request, response}) {
-      return response.json(request);
-    }
-
 }
 
 module.exports = DiamondController
